@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  background: #151719;
+  color: #d9e3ea;
+  overflow-x: hidden;
+}
+* {
+  scroll-behavior: smooth;
+}
+.container {
+  margin: auto;
+}
+
+/*------------- HEADER -------------------*/
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 30;
+}
+
+/*------------- MAIN SECTION -------------------*/
+a,
+button {
+  transition: background-color 0.25s ease-in-out;
+}
+
+.text-purple-600 {
+  color: rgb(93, 93, 255);
+}
+.bg-purple-600 {
+  background-color: rgb(93, 93, 255);
+}
+
+.hover\:bg-purple-700:hover {
+  background-color: rgb(61, 61, 163) !important;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  border-color: transparent;
+  font-weight: 500;
+  line-height: 1.375;
+}
+
+/* MY SHIT */
+
+.joke-container {
+  background-color: #0e0e0e;
+  border-radius: 5px;
+  margin: auto;
+  height: 576px;
+  max-width: 1024px;
+}
+.h1 {
+  font-size: 2.5rem;
+}
+
+.h1,
+.h2 {
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.h2,
+.h3 {
+  font-size: 2rem;
+}
+
+.h3 {
+  line-height: 1.25;
+}
+
+.h3,
+.h4 {
+  font-weight: 700;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  line-height: 1.375;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 3.25rem;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
+  }
+}
+.dark-styling {
+  background-color: #121212;
+  border-radius: 19px;
+  padding: 45px;
+}
+
+/* Checkbox styles */
+label.checkbox {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  margin-right: 1rem;
+  padding-left: 1.5rem;
+
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+label.checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+label.checkbox input[type="checkbox"]:focus ~ span {
+  border: 2px solid #5e5e5e;
+}
+label.checkbox input[type="checkbox"]:focus:checked ~ span {
+  border: 2px solid #20644c;
+}
+label.checkbox input[type="checkbox"]:checked ~ span {
+  color: #ffffff;
+  width: 1rem;
+  height: 1rem;
+  background-size: 10px !important;
+  background: #047481
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+)
+    50% 40% no-repeat;
+  border: 2px solid #047481;
+}
+label.checkbox span {
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 1.15px;
+  width: 1rem;
+  height: 1rem;
+  background-color: #374151;
+  border: 2px solid #4b5563;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label.checkbox.green input[type="checkbox"]:focus:checked ~ span {
+  border: 2px solid #057a55;
+}
+label.checkbox.green input[type="checkbox"]:checked ~ span {
+  background: #057a55
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+)
+    50% 40% no-repeat;
+  border: 2px solid #057a55;
+}
+
+label.checkbox.purple input[type="checkbox"]:focus:checked ~ span {
+  border: 2px solid #7e3af2;
+}
+label.checkbox.purple input[type="checkbox"]:checked ~ span {
+  background: #7e3af2
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+)
+    50% 40% no-repeat;
+  border: 2px solid #7e3af2;
+}
+
+label.checkbox.yellow input[type="checkbox"]:focus:checked ~ span {
+  border: 2px solid #e3a008;
+}
+label.checkbox.yellow input[type="checkbox"]:checked ~ span {
+  background: #e3a008
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+)
+    50% 40% no-repeat;
+  border: 2px solid #e3a008;
+}
+
+label.checkbox.red input[type="checkbox"]:focus:checked ~ span {
+  border: 2px solid #e02424;
+}
+label.checkbox.red input[type="checkbox"]:checked ~ span {
+  background: #e02424
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+)
+    50% 40% no-repeat;
+  border: 2px solid #e02424;
+}
+
+label.checkbox.orange input[type="checkbox"]:focus:checked ~ span {
+  border: 2px solid #ff5a1f;
+}
+label.checkbox.orange input[type="checkbox"]:checked ~ span {
+  background: #ff5a1f
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+)
+    50% 40% no-repeat;
+  border: 2px solid #ff5a1f;
+}
