@@ -20,7 +20,7 @@ function App() {
   });
 
   return (
-    <div className="container">
+    <div className="container overflow-hidden">
       <span
         className="hidden text-purple-600 bg-purple-200 text-teal-600
              bg-teal-200 text-green-600 bg-green-200 text-yellow-600 bg-yellow-200
