@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   background: #151719;
   color: #d9e3ea;
   overflow-x: hidden;
@@ -54,7 +56,7 @@ button {
   line-height: 1.375;
 }
 
-/* MY SHIT */
+/*--- ADDITIONAL MODIFICATIONS ---*/
 
 .joke-container {
   background-color: #0e0e0e;
@@ -110,6 +112,7 @@ button {
 }
 
 /* Checkbox styles */
+
 label.checkbox {
   font-size: 0.875rem;
   line-height: 1.25rem;

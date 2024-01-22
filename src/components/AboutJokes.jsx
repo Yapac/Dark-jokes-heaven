@@ -10,39 +10,6 @@ export const AboutJokes = () => {
           viewBox="0 0 64 64"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect
-            className="fill-current text-purple-600"
-            width="64"
-            height="64"
-            rx="32"
-          />
-          <path
-            className="stroke-current text-purple-100"
-            d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924"
-            strokeLinecap="square"
-            strokeWidth="2"
-            fill="none"
-            fillRule="evenodd"
-          />
-          <path
-            className="stroke-current text-purple-300"
-            d="M43 42h-9M43 37h-9"
-            strokeLinecap="square"
-            strokeWidth="2"
-          />
-        </svg>
-      ),
-    },
-    {
-      name: "Dark",
-      explaination:
-        "Humor that explores taboo or sensitive subjects, often employing irony, sarcasm, or unexpected twists. Not suitable for all audiences due to its potentially controversial nature.",
-      icon: (
-        <svg
-          className="w-16 h-16 mb-4"
-          viewBox="0 0 64 64"
-          xmlns="http://www.w3.org/2000/svg"
-        >
           <circle
             className="fill-current text-purple-600"
             cx="32"
@@ -62,6 +29,39 @@ export const AboutJokes = () => {
             d="M26 28h12M26 32h12M26 36h5"
             strokeWidth="2"
             strokeLinecap="square"
+          />
+        </svg>
+      ),
+    },
+    {
+      name: "Dark",
+      explaination:
+        "Humor that explores taboo or sensitive subjects, often employing irony, sarcasm, or unexpected twists. Not suitable for all audiences due to its potentially controversial nature.",
+      icon: (
+        <svg
+          className="w-16 h-16 mb-4"
+          viewBox="0 0 64 64"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            className="fill-current text-purple-600"
+            width="64"
+            height="64"
+            rx="32"
+          />
+          <path
+            className="stroke-current text-purple-100"
+            d="M30 39.313l-4.18 2.197L27 34.628l-5-4.874 6.91-1.004L32 22.49l3.09 6.26L42 29.754l-3 2.924"
+            strokeLinecap="square"
+            strokeWidth="2"
+            fill="none"
+            fillRule="evenodd"
+          />
+          <path
+            className="stroke-current text-purple-300"
+            d="M43 42h-9M43 37h-9"
+            strokeLinecap="square"
+            strokeWidth="2"
           />
         </svg>
       ),
@@ -242,9 +242,9 @@ export const AboutJokes = () => {
               Welcome to Dark Jokes Heaven, where laughter meets the shadows!
             </h2>
             <p className="text-xl text-gray-400">
-              Our website provide you with the darkest jokes on the internet, we
-              don't mean offending people by any means and remember that jokes
-              are jokes after all.
+              Our website provides the darkest jokes on the internet, we don't
+              agree with them by any means, we just created a place where all
+              the fucked up jokes can exist.
             </p>
           </div>
 

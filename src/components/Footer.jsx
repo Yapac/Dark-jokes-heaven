@@ -21,7 +21,7 @@ export const Footer = () => {
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
-            <div className="md:col-span-8 lg:col-span-7 grid sm:grid-cols-3 gap-8">
+            <div className="md:col-span-8 lg:col-span-7 grid justify-center sm:grid-cols-3 gap-8">
               {/* 2nd block */}
               <div className="text-sm opacity-0 pointer-events-none">
                 <h6 className="text-gray-200 font-medium mb-1">Products</h6>
@@ -54,7 +54,7 @@ export const Footer = () => {
               </div>
 
               {/* 3rd block */}
-              <div className="text-sm text-end">
+              <div className="text-sm text-start">
                 <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
                 <ul>
                   <li className="mb-1">
@@ -127,7 +127,7 @@ export const Footer = () => {
           {/* Bottom area */}
           <div className="md:flex md:items-center md:justify-between">
             {/* Social links */}
-            <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+            <ul className="flex justify-center mb-4 md:order-1 md:ml-4 md:mb-0">
               <li className="ml-4">
                 <a
                   href="https://github.com/Yapac"
@@ -181,7 +181,7 @@ export const Footer = () => {
             </ul>
 
             {/* Copyrights note */}
-            <div className="text-gray-400 text-sm mr-4">
+            <div className="text-gray-400 text-center text-sm mr-4">
               &copy; Dark jokes heaven. All rights reserved.
             </div>
           </div>
